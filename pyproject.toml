@@ -8,25 +8,15 @@ version = "0.1.0"
 description = "Analysis of Lyman-break galaxies in Rubin DP1"
 readme = "README.md"
 license = {file = "LICENSE"}
-authors = [
-    {name = "John Franklin Crenshaw",
-    email = "jfcrenshaw@gmail.com"}
-]
 requires-python = ">=3.13"
-keywords = ["astronomy", "lbgs", "dp1"]
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.13",
-    "Topic :: Scientific/Engineering :: Astronomy",
-]
 
 dependencies = [
     "numpy",
     "matplotlib",
     "scipy",
+    "astropy",
+    "pandas",
+    "pyarrow",
 ]
 
 [project.optional-dependencies]
@@ -40,7 +30,6 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/jfcrenshaw/dp1_lbgs"
 Repository = "https://github.com/jfcrenshaw/dp1_lbgs"
-Issues = "https://github.com/jfcrenshaw/dp1_lbgs/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
