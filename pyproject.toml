@@ -42,7 +42,7 @@ Repository = "https://github.com/jfcrenshaw/dp1_lbgs"
 Issues = "https://github.com/jfcrenshaw/dp1_lbgs/issues"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 include = ["dp1_lbgs*"]
 
 [tool.black]
